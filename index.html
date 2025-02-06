@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUBG Tournament</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#tournament">Tournament</a></li>
+                <li><a href="#leaderboard">Leaderboard</a></li>
+                <li><a href="#register">Register</a></li>
+            </ul>
+        </nav>
+        <button id="music-btn">🎵 Play Music</button>
+    </header>
+
+    <canvas id="particles"></canvas>
+
+    <div class="container">
+        <section id="home" class="page">
+            <h1 class="fire-text">🏆 PUBG Tournament 2025</h1>
+            <p class="fade-in">Join the battle, compete, and win prizes!</p>
+            <div id="countdown">
+                <h2>Next Tournament Starts In:</h2>
+                <p id="timer"></p>
+            </div>
+        </section>
+
+        <section id="tournament" class="page">
+            <h1 class="slide-up">Tournament Details</h1>
+            <p class="slide-up">Game Mode: Squad | Prize Pool: $1000</p>
+        </section>
+
+        <section id="leaderboard" class="page">
+            <h1 class="glow">🏅 Leaderboard</h1>
+            <table class="leaderboard">
+                <thead>
+                    <tr><th>Rank</th><th>Team Name</th><th>Points</th></tr>
+                </thead>
+                <tbody id="leaderboard-data">
+                    <tr><td>1</td><td>Team Alpha</td><td>500</td></tr>
+                    <tr><td>2</td><td>Warriors</td><td>450</td></tr>
+                    <tr><td>3</td><td>Sniper Squad</td><td>400</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="register" class="page">
+            <h1 class="pulse">Register Now</h1>
+            <form id="register-form">
+                <input type="text" placeholder="Enter your team name" required>
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="glow-button">Register</button>
+            </form>
+        </section>
+    </div>
+
+    <audio id="bg-music" loop>
+        <source src="bg-music.mp3" type="audio/mpeg">
+    </audio>
+
+</body>
+</html>
